@@ -17,10 +17,10 @@ public class UpDownBorder extends Border {
     }
 
     public String getRowText(int row) {
-        if (row == 0 || row == this.getRows()-1) {
+        if (row == 0 || row == this.getRows() - 1) {
             return makeLine(ch, this.getColumns());
         } else {
-            return display.getRowText(row);
+            return display.getRowText(row - 1);
         }
     }
 
