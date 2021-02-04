@@ -3,24 +3,26 @@ package decorator;
 public class Main {
     public static void main(String[] args) {
         Display b1 = new StringDisplay("Hello world.");
-        Display b2 = new SideBorder(b1, '#');
-        Display b3 = new FullBorder(b2);
+        Display b2 = new UpDownBorder(b1, '#');
+        Display b3 = new SideBorder(b2, '*');
         b1.show();
         b2.show();
         b3.show();
-        Display b4 = new SideBorder(
-                new FullBorder(
-                        new FullBorder(
-                                new SideBorder(
-                                        new FullBorder(
-                                                new StringDisplay("안녕하세요.")
+        Display b4 = new FullBorder(
+                new UpDownBorder(
+                        new SideBorder(
+                                new UpDownBorder(
+                                        new SideBorder(
+                                                new StringDisplay("Hello world"),
+                                                        '*'
+                                                ),
+                                                '='
                                         ),
-                                        '*'
-                                )
+                                        '|'
+                                ),
+                                '/'
                         )
-                ),
-                '/'
-        );
+                );
         b4.show();
     }
 }
