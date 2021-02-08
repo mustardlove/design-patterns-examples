@@ -1,6 +1,6 @@
 package adapter;
 
-public interface Print {
-    void printWeak();
-    void printStrong();
+public abstract class Print {
+    abstract void printWeak();
+    abstract void printStrong();
 }
