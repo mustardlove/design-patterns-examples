@@ -6,6 +6,11 @@ public class DarkRoast extends Beverage {
     }
 
     @Override
+    public Size getSize() {
+        return size;
+    }
+
+    @Override
     public double cost() {
         return .99;
     }

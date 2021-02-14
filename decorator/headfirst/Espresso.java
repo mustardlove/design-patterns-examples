@@ -6,6 +6,11 @@ public class Espresso extends Beverage {
     }
 
     @Override
+    public Size getSize() {
+        return size;
+    }
+
+    @Override
     public double cost() {
         return 1.99;
     }
