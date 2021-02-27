@@ -23,6 +23,10 @@ public abstract class Support {
         }
     }
 
+    public String toString() {
+        return "[" + name + "]";
+    }
+
     protected abstract boolean resolve(Trouble trouble);
 
     protected void done(Trouble trouble) {
