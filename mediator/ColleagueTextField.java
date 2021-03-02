@@ -2,8 +2,9 @@ package mediator;
 
 import java.awt.*;
 import java.awt.event.TextEvent;
+import java.awt.event.TextListener;
 
-public class ColleagueTextField extends TextField implements Colleague {
+public class ColleagueTextField extends TextField implements TextListener, Colleague {
     private Mediator mediator;
 
     public ColleagueTextField(String text, int columns) {
