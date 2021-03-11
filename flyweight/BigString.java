@@ -7,5 +7,8 @@ public class BigString {
     }
 
     public void print() {
+        for (int i = 0; i < bigchars.length; i++) {
+            bigchars[i].print();
+        }
     }
 }
