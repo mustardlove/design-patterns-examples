@@ -1,7 +1,5 @@
 package interpreter;
 
-import java.text.ParseException;
-
 public class ProgramNode extends Node {
     private Node commandListNode;
 
